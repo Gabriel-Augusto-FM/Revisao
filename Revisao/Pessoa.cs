@@ -12,6 +12,7 @@ namespace Revisao
 
         public bool Contatar()
         {
+            Console.WriteLine("Usuário Contatado com sucesso");
             return true;
         }
     }

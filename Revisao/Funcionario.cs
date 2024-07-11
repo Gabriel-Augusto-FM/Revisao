@@ -6,14 +6,28 @@ using System.Threading.Tasks;
 
 namespace Revisao
 {
-    public class Funcionario:Pessoa
+    public class Funcionario : Pessoa
     {
-        public int matricula { get; set; }
-        private string placaVeiculo { get; set; }
+        private int matricula { get; set; }
+        public string placaVeiculo { get; set; }
+
+        public int ValorMatricula()
+        {
+            return matricula;
+        }
 
         public bool verificarVeiculo(Automovel automovel)
         {
-            return true;
+            if (placaVeiculo.Length==7)
+            {
+                Console.WriteLine("Placa tem 7 caracteres");
+                return true;
+            }else
+            {
+                Console.WriteLine("Placa não tem 7 caracteres");
+                return false;
+            }
+            
         }
     }
 }

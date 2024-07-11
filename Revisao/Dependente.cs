@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Revisao
 {
-    public class Dependente:Funcionario
+    public class Dependente : Pessoa
     {
         public int parentesco { get; set; }
     }
